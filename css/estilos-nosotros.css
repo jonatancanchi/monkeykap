@@ -1,0 +1,247 @@
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  /*box-sizing: inherit;*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+.navbar
+{
+    display: flex;
+    cursor: pointer;
+    height: 85px;
+    border-bottom: 0.5px solid #343533;
+}
+.navbar-expand-lg .navbarcollapse
+{
+    display: flex;
+}
+.navbar-colapse
+{
+    align-items: center;
+    width: 100%;
+}
+.bg-color
+{
+    background-color: white;
+}
+
+#navbarNavDropdown
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+.servicios, .presentacion{
+  width: 100%;
+  margin: auto;
+  
+  font-weight: bold;
+}
+
+.titulo-servicios, .presentacion {
+  margin-bottom: 10%;
+}
+
+p {
+  font-size: 16px;
+  color: #868484;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+h4{
+  font-size: 24px;
+}
+.logo {
+  width: 100px;
+  height: 20px;
+  float: left;
+
+}
+
+header {
+  position: fixed;
+  top: 0;
+  border-bottom: 0.8px solid #343533;
+  width: 100%;
+  background-color: white;
+}
+
+.wrapper {
+  background-color: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+
+.presentacion {
+  padding-top: 200px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.presentacion .flex-item2 {
+  text-align: center;
+}
+
+.presentacion h1 {
+  margin-top: 0;
+  margin-left: 20px;
+  padding-right: 20px;
+  font-size: 3rem;
+}
+
+.presentacion p {
+  padding-right: 20px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+}
+
+.servicios div {
+  text-align: center;
+}
+
+.servicios .tipo-servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.servicios .tipo-servicios i {
+  font-size: 30px;
+  color: #6495ED;
+}
+
+.float
+{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:30px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+    background-color:#fff;
+}
+.my-float
+{
+	margin-top:16px;
+}
+
+footer
+{
+    background: #ccc;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer
+{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #9e9797 ;
+}
+
+.content-footer{
+    text-align: center;
+}
+
+.content-footer h4{
+    color: #FFF;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-footer a{
+    color: black;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+@media (min-width: 1400px) {
+  .servicios,.presentacion {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .presentacion, .tipo-servicios {
+    flex-direction: column;
+  }
+  .presentacion div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+
+@media (max-width: 420px) {
+  .presentacion div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .presentacion div h1, .presentacion div p {
+    padding: 0;
+  }
+}
